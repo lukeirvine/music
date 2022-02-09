@@ -29,23 +29,14 @@ const Homepage = () => {
                         with engaging MicroSaaS web apps, mostly using React.js and Firebase.
                     </p>
                     <div className="hp2-link-container">
-                        <Button 
+                         <Button 
                             variant="light" 
                             className="hp2-link-btn"
                             as={ Link }
-                            to="/apps"
+                            to="/music"
                         >
-                            <i className='bi-tools' />
-                            <span className="hp2-link-btn-text">Apps</span>
-                        </Button>
-                        <Button 
-                            variant="light" 
-                            className="hp2-link-btn" 
-                            href="https://github.com/lukeirvine" 
-                            target="_blank"
-                        >
-                            <i className='bi-github' />
-                            <span className="hp2-link-btn-text">Code</span>
+                            <i className='bi-music-note-beamed' />
+                            <span className="hp2-link-btn-text">Music</span>
                         </Button>
                         <Button 
                             variant="light" 
@@ -55,15 +46,6 @@ const Homepage = () => {
                         >
                             <i className='bi-linkedin' />
                             <span className="hp2-link-btn-text">Linkedin</span>
-                        </Button>
-                        <Button 
-                            variant="light" 
-                            className="hp2-link-btn"
-                            as={ Link }
-                            to="/music"
-                        >
-                            <i className='bi-music-note-beamed' />
-                            <span className="hp2-link-btn-text">Music</span>
                         </Button>
                         <Button 
                             variant="light" 
