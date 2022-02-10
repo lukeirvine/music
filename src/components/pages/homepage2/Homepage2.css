@@ -31,9 +31,9 @@
 }
 
 .hp2-avatar {
-    width: 200%; height: 200%;
+    width: 100%; height: 100%;
     object-fit: cover;
-    object-position: -55px 90%;
+    object-position: -0px -0px;
 }
 
 .hp2-identity {

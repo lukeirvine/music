@@ -50,6 +50,9 @@ export const imgs = {
     },
     maze: {
         action: 'https://i.imgur.com/2fAw7TO.jpg'
+    },
+    profile: {
+        haystack: 'https://i.imgur.com/0TqSrW1.jpg'
     }
 }
 

@@ -4,6 +4,7 @@ import Background from './components/Background';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Homepage2.css'
+import { imgs } from '../../../resources/images';
 
 const Homepage = () => {
     return (
@@ -15,37 +16,38 @@ const Homepage = () => {
                         <img
                             className="hp2-avatar"
                             alt="avatar"
-                            src="https://i.imgur.com/3EAWXp9.jpg"
+                            src={imgs.profile.haystack}
                         />
                     </div>
-                    <h1 className="page-title">Luke Irvine</h1>
+                    <h1 className="page-title">Luke Irvine Music</h1>
                     <div className="hp2-identity">
-                        <h2 className="hp2-identity-item">Full-stack Developer, </h2>
-                        <h2 className="hp2-identity-item">Musician, </h2>
-                        <h2 className="hp2-identity-item">Outdoor Adventurer</h2>
+                        <h2 className="hp2-identity-item">Piano Instructor, </h2>
+                        <h2 className="hp2-identity-item">Classically trained, </h2>
+                        <h2 className="hp2-identity-item">Jazz Enthusiast</h2>
                     </div>
                     <p className="hp2-tagline">
-                        I solve people's problems and make their lives easier 
-                        with engaging MicroSaaS web apps, mostly using React.js and Firebase.
+                        I spread the joy of music to others through electric performances 
+                        and passionate piano instruction focusing on easy essentials to get 
+                        you playing as quickly as possible.
                     </p>
                     <div className="hp2-link-container">
-                         <Button 
+                        <Button 
                             variant="light" 
                             className="hp2-link-btn"
                             as={ Link }
                             to="/music"
                         >
                             <i className='bi-music-note-beamed' />
-                            <span className="hp2-link-btn-text">Music</span>
+                            <span className="hp2-link-btn-text">Performances</span>
                         </Button>
                         <Button 
                             variant="light" 
-                            className="hp2-link-btn" 
-                            href="https://www.linkedin.com/in/luke-irvine-73b136186/" 
-                            target="_blank"
+                            className="hp2-link-btn"
+                            as={ Link }
+                            to="/music"
                         >
-                            <i className='bi-linkedin' />
-                            <span className="hp2-link-btn-text">Linkedin</span>
+                            <i className='bi-book' />
+                            <span className="hp2-link-btn-text">Lessons</span>
                         </Button>
                         <Button 
                             variant="light" 
