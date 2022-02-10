@@ -9,8 +9,8 @@ const Portfolio = () => {
         <>
             <NavBar />
             <div className="apps-page">
-                <img className="hero-img apps-hero" alt="" src="https://i.imgur.com/VjswpFA.png" />
-                <h1 className="apps-title"><i className="bi-tools" />  Apps</h1>
+                <img className="hero-img apps-hero" alt="" src={imgs.music.treeFarm} />
+                <h1 className="apps-title"><i className="bi-music-note-beamed" />  Performances</h1>
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
@@ -21,7 +21,18 @@ const Portfolio = () => {
                             January 2022
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.midi.gm7} />
+                        <div className="app-demo-img">
+                            <div className="app-iframe">
+                                <img className="app-iframe-ratio" src={imgs.music.botb} />
+                                <iframe
+                                    src="https://www.youtube.com/embed/87DU3thr9Dk"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                />
+                            </div>
+                        </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     When I started configuring my setup to teach online piano lessons, I looked for a simple app online that would display 
