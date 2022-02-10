@@ -17,8 +17,9 @@ export const imgs = {
         trioConcert: 'https://i.imgur.com/vtWIzca.jpg',
         botbBlack: 'https://i.imgur.com/bWNW3yx.jpg',
         botbRed: 'https://i.imgur.com/EZNYI01.jpg',
-        vespersClose: 'https://i.imgur.com/1bC8Nl8.jpg'
-
+        vespersClose: 'https://i.imgur.com/1bC8Nl8.jpg',
+        vespersPianoOverhead: 'https://i.imgur.com/0sKa6C1.jpg',
+        vespersOverhead: 'https://i.imgur.com/AJbprbX.jpg'
     },
     goaltop: {
         homepage: 'https://i.imgur.com/Zjsf9ee.jpg',

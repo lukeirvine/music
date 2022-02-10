@@ -8,6 +8,8 @@
 
 .brand-link {
     color: rgb(231, 231, 231);
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px black; */
 }
 
 .brand-link:hover {
@@ -15,7 +17,8 @@
     text-decoration: none;
 }
 
-.brand-link, .brand-link:hover {
+.brand-link, .brand-link:hover,
+.nav-link, .nav-link:hover {
     transition-duration: 0.3s;
 }
 
@@ -34,6 +37,19 @@
 
 
 @media only screen and (min-width: 992px) {
+    .nav-bar-container {
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        z-index: 2;
+        width: 100vw;
+    }
+
+    .brand-link {
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
 }
 
 

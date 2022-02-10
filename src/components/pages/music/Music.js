@@ -9,7 +9,7 @@ const Portfolio = () => {
         <>
             <NavBar />
             <div className="apps-page">
-                <img className="hero-img apps-hero" alt="" src={imgs.music.treeFarm} />
+                <img className="hero-img apps-hero" alt="" src={imgs.music.vespersOverhead} />
                 <h1 className="apps-title"><i className="bi-music-note-beamed" />  Performances</h1>
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
