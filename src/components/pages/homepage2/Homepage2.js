@@ -35,16 +35,16 @@ const Homepage = () => {
                             variant="light" 
                             className="hp2-link-btn"
                             as={ Link }
-                            to="/music"
+                            to="/portfolio"
                         >
                             <i className='bi-music-note-beamed' />
-                            <span className="hp2-link-btn-text">Performances</span>
+                            <span className="hp2-link-btn-text">Portfolio</span>
                         </Button>
                         <Button 
                             variant="light" 
                             className="hp2-link-btn"
                             as={ Link }
-                            to="/music"
+                            to="/lessons"
                         >
                             <i className='bi-book' />
                             <span className="hp2-link-btn-text">Lessons</span>

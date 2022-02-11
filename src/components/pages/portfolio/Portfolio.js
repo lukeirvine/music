@@ -9,8 +9,8 @@ const Portfolio = () => {
         <>
             <NavBar />
             <div className="apps-page">
-                <img className="hero-img apps-hero" alt="" src="https://i.imgur.com/VjswpFA.png" />
-                <h1 className="apps-title"><i className="bi-tools" />  Apps</h1>
+                <img className="hero-img apps-hero" alt="" src={imgs.music.vespersOverhead} />
+                <h1 className="apps-title"><i className="bi-music-note-beamed" />  Music Portfolio</h1>
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
@@ -21,7 +21,17 @@ const Portfolio = () => {
                             January 2022
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.midi.gm7} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                <iframe 
+                                    src="https://www.youtube.com/embed/87DU3thr9Dk" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                ></iframe>
+                                </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     When I started configuring my setup to teach online piano lessons, I looked for a simple app online that would display 
@@ -58,7 +68,11 @@ const Portfolio = () => {
                             October 2021 - present
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.goaltop.dashboard} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                <iframe src="https://www.youtube.com/embed/o3Fr2RZzw4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     Goaltop was born out of having too many little things to do and no good way to keep 
@@ -86,7 +100,11 @@ const Portfolio = () => {
                             December 2020 - Present
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.smallGroups.groupCards} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                    <iframe src="https://www.youtube.com/embed/-XdWOMf4-5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     This is a website I developed to help religious organizations
@@ -115,7 +133,11 @@ const Portfolio = () => {
                             July 2021
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.surveyCounter.reports} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                    <iframe src="https://www.youtube.com/embed/a5u0OT-WhSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     I worked at a summer camp for a number of years where we handed out
@@ -146,7 +168,11 @@ const Portfolio = () => {
                             August 2021
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.mealDash.dash} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                    <iframe src="https://www.youtube.com/embed/ccshOf2AGvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     This is another app for the summer camp I spent a number of years
@@ -174,7 +200,11 @@ const Portfolio = () => {
                             February 2020
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.maze.action} />
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                    <iframe src="https://www.youtube.com/embed/ABDGISMRWx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
                             <div className="app-description">
                                 <p className="app-par">
                                     This is the first major computer science project I worked on in college and it was easily the most fun. 
