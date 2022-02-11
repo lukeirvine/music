@@ -9,13 +9,18 @@
     background-color: black;
 }
 
-.apps-title {
+.apps-title-container {
     position: absolute;
     width: 100vw;
     top: 90px;
     color: white;
     text-align: center;
     z-index: 2;
+}
+
+.apps-subtitle {
+    font-size: 1rem;
+    color: rgb(216, 216, 216);
 }
 
 .app-title-icon {
@@ -105,9 +110,16 @@
 
 
 @media only screen and (min-width: 767px) {
+    .apps-title-container {
+        top: 110px;
+    }
+
     .apps-title {
-        top: 130px;
-        font-size: 60px;
+        font-size: 55px;
+    }
+
+    .apps-subtitle {
+        font-size: 20px;
     }
 
     .apps-hero {
@@ -142,6 +154,10 @@
     .app-content {
         display: flex;
         width: 100%;
+    }
+
+    .apps-title-container {
+        top: 130px;
     }
 
     .app-icon, .app-name {

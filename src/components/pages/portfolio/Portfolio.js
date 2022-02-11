@@ -10,12 +10,15 @@ const Portfolio = () => {
             <NavBar />
             <div className="apps-page">
                 <img className="hero-img apps-hero" alt="" src={imgs.music.vespersOverhead} />
-                <h1 className="apps-title"><i className="bi-music-note-beamed" />  Music Portfolio</h1>
+                <div className="apps-title-container">
+                    <h1 className="apps-title"><i className="bi-music-note-beamed" />  Music Portfolio</h1>
+                    <h2 className="apps-subtitle">Just a few snippets here and there</h2>
+                </div>
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
-                            <i className="bi-music-note-list app-icon" />
-                            <h2 className="app-name">Show My Piano</h2>
+                            <i className="bi-layers app-icon" />
+                            <h2 className="app-name">Jazz Trio Concert</h2>
                         </div>
                         <p className="app-dates">
                             January 2022
@@ -34,67 +37,47 @@ const Portfolio = () => {
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    When I started configuring my setup to teach online piano lessons, I looked for a simple app online that would display 
-                                    a piano keyboard with highlighted keys based on midi signals from an external keyboard. I couldn't find any elegant 
-                                    solutions that clearly displayed just a keyboard and the keys pressed, so I set out to create one.
-                                </p>
-                                <p className="app-par">
-                                    The keyboard is created entirely using CSS, which was quite a fun and scalable process. It was so satisfying to only 
-                                    create one octave and then loop through the code to create as many octaves as I wanted. The keyboard also has the capability 
-                                    of showing you the name of the chord being played. This process takes a bit of AI, so I used a very helpful npm library for this 
-                                    features. Building on the shoulders of giants is just so cool.
-                                </p>
-                                <p className="app-par">
-                                    Another interesting concern for this app was speed of execution. The depressed notes are kept track of in an array 
-                                    which has to be appended to or truncated each time a note is played or released. It also has to be searched by each 
-                                    key for that key to know if it should be highlighted or not. Furthermore, the chord analyzer runs every time a key is 
-                                    pressed or released, adding even more complexity. If not implemented in an efficient manner, the app can be 
-                                    easily prone to lagging. I had to refactor the code several times to increase speed and eventually got to a point where 
-                                    you didn't notice any lag, making the display feel like playing a real piano. 
-                                </p>
-                                <p className="app-par">
-                                    This app is currently free to use and hosted <a href="https://lukeirvine.github.io/midi-visualizer/#/" target="_blank">here</a>, though it will 
-                                    soon be monetized and cost a buck or so.  
+                                    My freshman year of college I found myself surrounded by so many phenomenal musicians. Some of my 
+                                    friends suggested I put on a concert and somehow I liked the idea and ran with it.  It was a 
+                                    terrifying but greatly rewarding experience. The trio was made up of Wil Spears on drums, Luke 
+                                    Thomas on bass, and myself on piano. We had several soloists join us including a saxophonist, vocalist, 
+                                    and trumpeter, and it such a fun time playing with each of them. Here's one clip from that concert 
+                                    featuring the great Nate Miller on trumpet.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="goaltop-container">
+                    <div className="app-container app-dark" id="survey-container">
                         <div className="app-name-container">
-                            <i className="bi-arrow-up-circle-fill app-icon" />
-                            <h2 className="app-name">GoalTop</h2>
+                            <i className="bi-brush app-icon" />
+                            <h2 className="app-name">Saucy Keys Solo</h2>
                         </div>
                         <p className="app-dates">
-                            October 2021 - present
+                            June 2021
                         </p>
                         <div className="app-content">
                             <div className="app-demo-vid">
                                 <div class='app-embed-container'>
-                                <iframe src="https://www.youtube.com/embed/o3Fr2RZzw4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                                    <iframe src="https://www.youtube.com/embed/a5u0OT-WhSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    Goaltop was born out of having too many little things to do and no good way to keep 
-                                    my eyes on the big milestones I was working towards. A whiteboard above my desk probably 
-                                    would have worked, but I figured it'd be much more effective to have my goals right on 
-                                    my desktop where I'd see them no matter where I was.
-                                </p>
-                                <p className="app-par">
-                                    This app is currently in beta testing but will be available for public use soon.
-                                </p>
-                                <p className="app-par">
-                                    If you'd like to participate in the
-                                    beta, <a href="mailto: lukeirvinefreelance@gmail.com">email me</a> and
-                                    I'll send you the beta access key.
+                                    Each spring my college put on this fun little event called Spring Jam. A ton of students 
+                                    would hang out on the green eating delicious food from the international food fair, playing 
+                                    all kinds of summer games, and listening to great music from 4-5 student bands. This is a short 
+                                    clip of the band I led, "Cliff Notes", named after our guitarist, Cliff. We're playing "Easy" by 
+                                    Mac Ayres and I chose this clip because it's one of my favorite improv solos. For once I 
+                                    actually let a melody take shape and didn't play too many notes! It was a beautiful little moment when 
+                                    I really felt in the zone. Hope you enjoy this little snippet as much as I did.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="app-container" id="smallgroups-container">
                         <div className="app-name-container">
-                            <i className="bi-people-fill app-icon" />
-                            <h2 className="app-name">Small Groups Website</h2>
+                            <i className="bi-moon app-icon" />
+                            <h2 className="app-name">Star Wars Medley</h2>
                         </div>
                         <p className="app-dates">
                             December 2020 - Present
@@ -107,65 +90,87 @@ const Portfolio = () => {
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    This is a website I developed to help religious organizations
-                                    facilitate small group signups and facilitation. It shows potential group
-                                    members the different groups available, how many people are in each along with
-                                    other information, and allows them to sign up and leave different groups.
+                                    Every once in a while you get lucky enough to put together some random cover or medley that makes 
+                                    no sense, other than that it's really fun to play. At some point during my first few years of college 
+                                    my jazz combo was asked to play for the "University Showcase" put on for all the high school students 
+                                    visiting during the main recruitment weekend of the year. 
                                 </p>
                                 <p className="app-par">
-                                    It's built using React.js, React Bootstrap Components, and Firebase.
-                                    It utilizes several Firebase features such as the Realtime Database,
-                                    Cloud Storage, Cloud Functions, and Authentication.
-                                </p>
-                                <p className="app-par">
-                                    This app isn't in production yet, but will hopefully be implemented and
-                                    used by Walla Walla Universtiy's Chaplain's Office in January of 2022.
+                                    Recently we ran out of songs at a gig so we made up a groove that sounded a lot like 
+                                    John Williams' "Duel of the Fates." So for this event we fleshed that idea out and added 
+                                    a couple other Star Wars themes to make a medley of it. We tried to be sneaky with where we 
+                                    brought the themes in at first, since the audience had no idea this was a Star Wars medley. When's 
+                                    the first moment you spot the theme?
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="survey-container">
+                    <div className="app-container app-dark" id="goaltop-container">
                         <div className="app-name-container">
-                            <i className="bi-pencil-square app-icon" />
-                            <h2 className="app-name">Survey Counter</h2>
+                            <i className="bi-door-open-fill app-icon" />
+                            <h2 className="app-name">Surprise Walk-on Gig</h2>
                         </div>
                         <p className="app-dates">
-                            July 2021
+                            October 2021 - present
                         </p>
                         <div className="app-content">
                             <div className="app-demo-vid">
                                 <div class='app-embed-container'>
-                                    <iframe src="https://www.youtube.com/embed/a5u0OT-WhSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                                <iframe src="https://www.youtube.com/embed/o3Fr2RZzw4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    I worked at a summer camp for a number of years where we handed out
-                                    paper surveys to the kids every week, but counting them and getting
-                                    any kind of real data from them was a real pain. So I developed this app
-                                    that makes entering the data extremely fast and then creates a series of
-                                    bar charts and averages for the data.
+                                    I was home for a couple weeks and itching to gig with my friend Nate Miller on trumpet again. 
+                                    It was short notice so we decided to grab Ivan Danilich on guitar and just busk in downtown 
+                                    Walla Walla. However, the corner we were planning on playing at had another musician playing 
+                                    outside next door. We packed up mere moments after arriving, feeling quite bummed. 
+                                    But then the owner of another winery a couple doors the other way walked up and asked 
+                                    why we were leaving so soon. We pointed to the live music and she promptly invited us 
+                                    to play on the patio of her winery. 
                                 </p>
-                                <p className="app-list-title">Additional Features:</p>
-                                <ul className="app-list">
-                                    <li>Can download a json object for survey data to be uploaded to another account</li>
-                                    <li>Can create a shareable link to display survey data without being logged in</li>
-                                </ul>
                                 <p className="app-par">
-                                    The camp staff in charge of the surveys loved using this app
-                                    and enjoyed being able to quickly share results with other staff via
-                                    the shareable link and will no doubt be using this app in future summers.
+                                    We were excited for a place to play, but weren't expecting much of a turnout since it was as 
+                                    last minute as can be. We didn't care; we were just excited to jam together again. 
+                                    Much to our surprise, we ended up packing out the venue's outdoor seating area and had such 
+                                    a good time with everyone who stopped to listen. Sometimes the best gigs are just fun 
+                                    music with fun company, no matter where you are.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="meal-container">
+                    <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
-                            <i className="bi-tv app-icon" />
-                            <h2 className="app-name">Meal Announcements</h2>
+                            <i className="bi-lightning-fill app-icon" />
+                            <h2 className="app-name">Battle of the Bands</h2>
                         </div>
                         <p className="app-dates">
-                            August 2021
+                            February 2020
+                        </p>
+                        <div className="app-content">
+                            <div className="app-demo-vid">
+                                <div class='app-embed-container'>
+                                <iframe src="https://www.youtube.com/embed/OAVveZiTx5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            </div>
+                            <div className="app-description">
+                                <p className="app-par">
+                                    Perhaps the crown of all student events at Walla Walla University is Battle of the Bands. 
+                                    Each year 4-5 student bands prepare 20-minute sets full of hit songs and gimmicks hoping they'll 
+                                    win it all. This is a clip of one of the songs from my set Junior year. The crowd was electric and 
+                                    100% responsive, no matter how good or bad we were. At the end of the day, we were all just stoked 
+                                    to be going absolutely nuts with our friends, supporting our friends' music. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="app-container app-dark" id="meal-container">
+                        <div className="app-name-container">
+                            <i className="bi-camera-video app-icon" />
+                            <h2 className="app-name">Covid Who?</h2>
+                        </div>
+                        <p className="app-dates">
+                            May 2020
                         </p>
                         <div className="app-content">
                             <div className="app-demo-vid">
@@ -175,26 +180,27 @@ const Portfolio = () => {
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    This is another app for the summer camp I spent a number of years
-                                    working for. During our family camps, we would have chaotic meal times
-                                    where campers would try to listen for when they were dismissed for
-                                    food and when they were dismissed for activities. It was a mess, so
-                                    I developed a small webpage that we loaded up on a smart tv in the
-                                    cafeteria, and a mobile site that controlled what was shown on
-                                    the tv in real time.
+                                    The last two years of my college experience I was cursed with the title of "Assistant Chaplain of 
+                                    Music," meaning I was in charge of all the worship music that happened on campus. It was a 
+                                    phenomenal experience, don't get me wrong, but I say cursed because it was around the same time 
+                                    COVID-19 struck. None of our worship programs could happen since we were all sent home to conintue 
+                                    our schooling online, which ironically meant more work for me, trying to keep a worship  
+                                    culture alive online.
                                 </p>
                                 <p className="app-par">
-                                    All the camp leadership loved this app because it completely
-                                    streamlined their meals, making for happier campers and more
-                                    time for the campers to do the activities they came to do.
+                                    I had the idea of putting together a full worship set of 4 songs in the format you see in this clip 
+                                    here. It was a ton of fun to put together and a great learning experience, but also way harder 
+                                    than I ever thought possible. In fact, this project was actually the cause of my first college all-nighter. 
+                                    Regardless of its quality (I'll let you be the judge), it's a project I'm immensely proud of because 
+                                    it gave people the smallest semblance of normalcy in the midst of a chaotic time.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="meal-container">
+                    <div className="app-container" id="meal-container">
                         <div className="app-name-container">
-                            <i className="bi-controller app-icon" />
-                            <h2 className="app-name">Maze</h2>
+                            <i className="bi-camera-video app-icon" />
+                            <h2 className="app-name">Covid Who Part 2</h2>
                         </div>
                         <p className="app-dates">
                             February 2020
@@ -207,16 +213,12 @@ const Portfolio = () => {
                             </div>
                             <div className="app-description">
                                 <p className="app-par">
-                                    This is the first major computer science project I worked on in college and it was easily the most fun. 
-                                    Humorously, this was written before I understood basic javascript modules, so all the code is in 
-                                    a single 'index.html' file. It's massive! Also there are several notable bugs that make me think 
-                                    back on the early coding days with fondness lol.
-                                </p>
-                                <p className="app-par">
-                                    Anyways, maybe one day I'll go back and refactor it for fun. 
-                                    Until then, you can play it <a target="_blank" href="https://lukeirvine.github.io/maze-with-enemies/">here</a>! 
-                                    You'll need to wait a little bit for everything to load, and if you want sound, make sure to click 
-                                    the sound button *before* you choose a level. It will be chaos if you click it after.
+                                    This is another clip from that COVID project highlighted above. I'm also proud of this 
+                                    song and how it turned out musically, but the mixing turned out to be quite a challenge 
+                                    because of everyone's different home-recording setups. I had to tweak tons of parameters 
+                                    and the vocals still wound up sounding a little funny - no fault of Audrey's, her voice 
+                                    still sounds incredible in spite of it. No matter how it wound up sounding, this project 
+                                    was a great deal of fun and something I cherish coming out of the pandemic. 
                                 </p>
                             </div>
                         </div>
