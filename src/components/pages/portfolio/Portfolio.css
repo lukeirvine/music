@@ -3,26 +3,6 @@
     background-color: white;
 }
 
-.apps-hero {
-    filter: blur(2.5px);
-    box-shadow: 0px 0px 0px 2px black;
-    background-color: black;
-}
-
-.apps-title-container {
-    position: absolute;
-    width: 100vw;
-    top: 90px;
-    color: white;
-    text-align: center;
-    z-index: 2;
-}
-
-.apps-subtitle {
-    font-size: 1rem;
-    color: rgb(216, 216, 216);
-}
-
 .app-title-icon {
     font-size: 2rem;
 }
@@ -110,21 +90,6 @@
 
 
 @media only screen and (min-width: 767px) {
-    .apps-title-container {
-        top: 110px;
-    }
-
-    .apps-title {
-        font-size: 55px;
-    }
-
-    .apps-subtitle {
-        font-size: 20px;
-    }
-
-    .apps-hero {
-        object-position: 0px -160px;
-    }
 
     .apps-content {
         display: flex;
@@ -154,10 +119,6 @@
     .app-content {
         display: flex;
         width: 100%;
-    }
-
-    .apps-title-container {
-        top: 130px;
     }
 
     .app-icon, .app-name {

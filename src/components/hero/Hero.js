@@ -1,46 +1,44 @@
-import React, { Component } from "react";
+import React from "react";
 import './Hero.css';
 
 /*
-    A large banner image that will cover the full width of the screen
     Props:
-        - img: the link to the image for the banner
-        - imgVerticalOffset: The position of the image from the top expressed
-                             as a percentage. 50% is centered.
-        - imgOpacity: specifies the image opacity, ranging from 0-1
-        - title: title text displayed over the image
-        - subtitle: subtitle displayed under the title
-        - id: optional id parameter for specific css styling. default is ""
+    - url         
+        - url for background img
+    - imgPos      
+        - String of format '0px 0px' detailing background img position
+        - Only kicks in for screen size greater than 767px
+    - opacity
+        - ranges from 0 to 1
+        - opacity of the background image with a black background
+    - title       
+        - Hero title
+    - subtitle    
+        - Hero Subtitle
 */
-class Hero extends Component {
-    constructor (props) {
-        super(props);
+const Hero = props => {
+    const { url, title, subtitle } = props;
+    let imgPos = props.imgPos === undefined ? '' : props.imgPos;
+    let opacity = props.opacity === undefined ? '' : props.opacity;
 
-        this.id = this.props.id;
-        if (this.id === undefined) {
-            this.id = "";
-        }
-        this.class = this.props.class;
-        if (this.class === undefined) {
-            this.class = "";
-        }
-    }
-    
-    render() {
-        return (
-            <div className={"hero-container " + this.class} id={this.id}>
-                <img className={"hero-img " + this.class} src={this.props.img} alt="biking" 
-                     style={{
-                         objectPosition: "50% " + this.props.imgVerticalOffset,
-                         opacity: this.props.imgOpacity
-                     }}/>
-                <div className="hero-text">
-                    <h1 className="hero-title">{this.props.title}</h1>
-                    <p className="hero-subtitle">{this.props.subtitle}</p>
-                </div>
-            </div>
-        )
-    }
+    console.log(window.screen.width)
+
+    return <>
+        <div className="hero-img hero-screen"></div>
+        <img 
+            className="hero-img" 
+            alt="" 
+            src={url} 
+            style={{
+                objectPosition: window.screen.width > 767 ? imgPos : 'auto',
+                opacity: opacity
+            }}
+        />
+        <div className="hero-title-container">
+            <h1 className="hero-title">{title}</h1>
+            <h2 className="hero-subtitle">{subtitle}</h2>
+        </div>
+    </>
 }
 
 export default Hero

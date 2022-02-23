@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../nav-bar/NavBar';
 import Footer from '../../footer/Footer';
+import Hero from '../../hero/Hero';
 import { imgs } from '../../../resources/images';
 import './Portfolio.css';
 
@@ -9,11 +10,17 @@ const Portfolio = () => {
         <>
             <NavBar />
             <div className="apps-page">
-                <img className="hero-img apps-hero" alt="" src={imgs.music.vespersOverhead} />
+                {/* <img className="hero-img apps-hero" alt="" src={imgs.music.vespersOverhead} />
                 <div className="apps-title-container">
                     <h1 className="apps-title"><i className="bi-music-note-beamed" />  Music Portfolio</h1>
                     <h2 className="apps-subtitle">Just a few snippets here and there</h2>
-                </div>
+                </div> */}
+                <Hero
+                    url={imgs.music.vespersOverhead}
+                    imgPos="0px -160px"
+                    title={<><i className="bi-music-note-beamed" /> Music Portfolio</>}
+                    subtitle={<>Just a few snippets here and there</>}
+                />
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
