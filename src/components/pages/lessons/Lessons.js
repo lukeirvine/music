@@ -46,8 +46,8 @@ const Lessons = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
-    <Footer className='c-footer' />
   </>;
 };
 
