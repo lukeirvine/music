@@ -29,7 +29,7 @@ const Footer = props => {
                 <div className="footer-text-wrapper footer-large-only">
                     <p className="footer-text footer-link">
                         <i className="bi-envelope-fill footer-icon" />
-                        <a className="footer-link" href="mailto: lukeirvinefreelance@gmail.com">lukeirvinefreelance@gmail.com</a>
+                        <a className="footer-link" href="mailto: lukeirvinemusic@gmail.com">lukeirvinemusic@gmail.com</a>
                     </p>
                 </div>
             </div>
