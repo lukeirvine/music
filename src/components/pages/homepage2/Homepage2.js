@@ -21,14 +21,14 @@ const Homepage = () => {
                     </div>
                     <h1 className="page-title">Luke Irvine Music</h1>
                     <div className="hp2-identity">
-                        <h2 className="hp2-identity-item">Piano Instructor, </h2>
-                        <h2 className="hp2-identity-item">Classically trained, </h2>
-                        <h2 className="hp2-identity-item">Jazz Enthusiast</h2>
+                        <h2 className="hp2-identity-item">Clasically trained, </h2>
+                        <h2 className="hp2-identity-item">Jazz enthusiast, </h2>
+                        <h2 className="hp2-identity-item">Piano Instructor and Performer</h2>
                     </div>
                     <p className="hp2-tagline">
                         I spread the joy of music to others through electric performances 
                         and passionate piano instruction focusing on easy essentials to get 
-                        you playing as quickly as possible.
+                        students playing as quickly as possible.
                     </p>
                     <div className="hp2-link-container">
                         <Button 

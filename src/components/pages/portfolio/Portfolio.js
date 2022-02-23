@@ -26,13 +26,13 @@ const Portfolio = () => {
                         <div className="app-content">
                             <div className="app-demo-vid">
                                 <div class='app-embed-container'>
-                                <iframe 
-                                    src="https://www.youtube.com/embed/87DU3thr9Dk" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen
-                                ></iframe>
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/87DU3thr9Dk" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                    ></iframe>
                                 </div>
                             </div>
                             <div className="app-description">

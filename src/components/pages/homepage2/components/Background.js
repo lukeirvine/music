@@ -3,7 +3,8 @@ import { imgs, imgsSorted } from '../../../../resources/images';
 import { shuffleArray, getRandomInt } from '../../../../resources/functions';
 import './Background.css';
 
-console.log(imgsSorted)
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+// console.log("Safari?", isSafari);
 
 const colors = [
     'yellow', 'red', 'blue', 'green', 'purple', 'orange', 'pink', 'white', 'black', 'gray'
@@ -44,7 +45,7 @@ const Background = () => {
             <div 
                 className={'item item-' + i.toString()}
             >
-                <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '')}>
+                <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '') + (isSafari ? ' safari-card' : '')}>
                     <img
                         src={imgsSorted[i].front}
                         className="bg-image bg-card-front"

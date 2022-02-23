@@ -136,9 +136,12 @@
         height: 100%;
         position: absolute;
         transform-style: preserve-3d;
-        -webkit-transition: transform 1.5s ease;
-        -o-transition: transform 1.5s ease;
+        -webkit-transition: -webkit-transform 1.5s ease;
+        -o-transition: -o-transform 1.5s ease;
         transition: transform 1.5s ease;
+    }
+    .safari-card {
+        transition: -transform 1.5s ease;
     }
     .bg-card-flipped {
         transform: rotateY(180deg);
@@ -155,7 +158,7 @@
     }
     .bg-card-front {
         -webkit-backface-visibility: hidden;
-        /* backface-visibility: hidden; */
+        backface-visibility: hidden;
         /* background-color: rgb(117, 211, 255); */
     }
     .bg-card-back {
