@@ -1,5 +1,29 @@
 .lsn-page {
     position: absolute;
+    background-image: linear-gradient(rgb(94, 94, 94), rgb(31, 31, 31));
+    padding-bottom: 60px;
+}
+
+.lsn-content-container {
+    padding: 15px;
+}
+
+.lsn-content {
+    color: white;
+}
+
+.lsn-h3 {
+    font-size: 1.5rem;
+}
+
+.lsn-demographic {
+    font-weight: bold;
+}
+
+.lsn-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Screen size specs */
@@ -13,12 +37,41 @@
 
 
 @media only screen and (min-width: 767px) {
+    .lsn-content-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .lsn-content {
+        width: 500px;
+    }
 }
 
 
 @media only screen and (min-width: 992px) {
+    .lsn-content {
+        width: 800px;
+    }
+
+    .lsn-description-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .lsn-description {
+        width: 30%;
+    }
+
+    .lsn-text-center {
+        text-align: center;
+    }
 }
 
 
 @media only screen and (min-width: 1200px) {
+    .lsn-content {
+        width: 1100px;
+    }
 }

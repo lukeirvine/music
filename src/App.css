@@ -7,15 +7,6 @@ body {
   color: white;
 }
 
-.hero-img {
-  width: 100vw;
-  height: 250px;
-  object-fit: cover;
-  top: 0px;
-  z-index: -1;
-}
-
-
 /* Screen size specs */
 
 @media only screen and (max-width: 576px) {
@@ -27,9 +18,6 @@ body {
 
 
 @media only screen and (min-width: 767px) {
-  .hero-img {
-    height: 350px;
-  }
 }
 
 

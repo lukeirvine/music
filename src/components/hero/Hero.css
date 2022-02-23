@@ -2,6 +2,12 @@
     filter: blur(3px);
     box-shadow: 0px 0px 0px 2px black;
     background-color: black;
+    z-index: 2;
+    position: relative;
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+    top: 0px;
 }
 
 .hero-screen-anchor {
@@ -12,7 +18,7 @@
 .hero-screen {
     position: absolute;
     top: 0px;
-    z-index: -3;
+    z-index: 1;
     background-color: black;
 }
 
@@ -22,7 +28,7 @@
     top: 90px;
     color: white;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero-subtitle {
@@ -41,6 +47,10 @@
 
 
 @media only screen and (min-width: 767px) {
+    .hero-img {
+        height: 350px;
+    }
+
     .hero-title-container {
         top: 110px;
     }
