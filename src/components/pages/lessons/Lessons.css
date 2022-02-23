@@ -44,7 +44,12 @@
         padding-top: 30px;
     }
     .lsn-content {
-        width: 500px;
+        width: 400px;
+    }
+
+    .lsn-h3 {
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 }
 
@@ -52,13 +57,14 @@
 @media only screen and (min-width: 992px) {
     .lsn-content {
         width: 800px;
+        margin-bottom: 40px;
     }
 
     .lsn-description-container {
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .lsn-description {
