@@ -124,7 +124,7 @@
     transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 1.5s ease;
     -o-transition: -o-transform 1.5s ease;
-    transition: transform 1.5s ease;
+    transition: -transform 1.5s ease;
 }
 .safari-card {
     transition: -transform 1.5s ease;
