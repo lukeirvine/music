@@ -9,8 +9,8 @@ import { imgs } from '../../../resources/images';
 const Homepage = () => {
     return (
         <>
-            <Background />
             <div className="hp2-page">
+                <Background />
                 <div className="hp2-content">
                     <div className="hp2-avatar-wrapper">
                         <img

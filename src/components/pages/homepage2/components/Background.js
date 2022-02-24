@@ -62,18 +62,13 @@ const Background = () => {
     }
 
     return (
-        <>
             <div className="bg-main-container">
-                <div className="bg-grid-container bg-anchor-1">
+                <div className="bg-grid-container">
                     <div className="bg-grid">
                         {items}
                     </div>
                 </div>
             </div>
-            <div className="bg-grid-container bg-anchor-2">
-                <div className="bg-grid-screen"></div>
-            </div>
-        </>
     )
 }
 

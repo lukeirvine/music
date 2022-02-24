@@ -5,16 +5,13 @@
     /* display: none; */
 }
 
-.hp2-hero {
-    display: none;
-}
-
 .hp2-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .hp2-avatar-wrapper, .hp2-avatar {
@@ -98,20 +95,17 @@
 @media only screen and (min-width: 767px) {
     .hp2-page {
         height: 90vh;
-        padding-top: 100px;
     }
 
     .hp2-content {
         width: 600px;
         margin-top: 0px;
+        padding-top: 100px;
     }
 }
 
 
 @media only screen and (min-width: 992px) {
-    .hp2-hero {
-        object-position: 50% 10%;
-    }
 }
 
 
