@@ -129,6 +129,7 @@
 .safari-card {
     transition: -transform 1.5s ease;
 }
+/* This enables the flip transitions */
 .bg-card-flipped {
     /* transform: rotateY(180deg); */
 }
