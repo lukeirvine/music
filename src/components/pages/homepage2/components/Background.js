@@ -62,13 +62,13 @@ const Background = () => {
     }
 
     return (
-            <div className="bg-main-container">
-                <div className="bg-grid-container">
-                    <div className="bg-grid">
-                        {items}
-                    </div>
+        <div className="bg-main-container">
+            <div className="bg-grid-container">
+                <div className="bg-grid">
+                    {items}
                 </div>
             </div>
+        </div>
     )
 }
 

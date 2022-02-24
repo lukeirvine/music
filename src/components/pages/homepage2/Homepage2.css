@@ -1,7 +1,7 @@
 .hp2-page {
     width: 100vw;
     min-height: 100vh;
-    position: relative;
+    position: absolute;
     /* display: none; */
 }
 
@@ -12,6 +12,7 @@
     margin: auto;
     padding-top: 30px;
     padding-bottom: 20px;
+    position: relative;
 }
 
 .hp2-avatar-wrapper, .hp2-avatar {
@@ -95,6 +96,11 @@
 @media only screen and (min-width: 767px) {
     .hp2-page {
         height: 90vh;
+    }
+
+    .hp2-content-wrapper {
+        display: flex;
+        justify-content: center;
     }
 
     .hp2-content {
